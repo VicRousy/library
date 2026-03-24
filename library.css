@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+	background: #f0f4f8;
+}
+
+header{
+	background: #2c3e50;
+	color: white;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#new-book-btn{
+	background: #e74c3c;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 6px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#library-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 40px;
+}
+
+.book-card{
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.book-card h3{
+	font-size: 18px;
+	color: #2c3e50;
+}
+
+.read { color: green; font-weight: 600;}
+.unread { color: red; font-weight: 600;}
+
+.card-buttons {
+	display: flex;
+	gap: 8px;
+	margin-top: auto;
+}
+
+.toggle-btn {
+	background: #3498db;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	flex: 1;
+}
+
+.remove-btn {
+	background: #e74c3c;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	flex: 1;
+}
+
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 32px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+dialog h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+dialog label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+dialog input[type="text"],
+dialog input[type="number"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px !important;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-buttons button[type="submit"] {
+  background: #2c3e50;
+  color: white;
+}
+
+
+.form-buttons button[type="button"] {
+  background: #ccc;
+}
